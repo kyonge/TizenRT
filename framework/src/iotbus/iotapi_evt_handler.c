@@ -36,9 +36,10 @@
 #define IOTAPI_MESSAGE_QUEUE_INSERT	1
 #define IOTAPI_MESSAGE_QUEUE_REMOVE	2
 
-struct _iotapi_msg_queue {
-	int type;					// 1 is insert, 2 is remove, 0 is empty
-	iotapi_elem evt;
+struct _iotapi_msg_queue
+{
+int type;					// 1 is insert, 2 is remove, 0 is empty
+iotapi_elem evt;
 };
 
 struct _iotapi_msg_queue g_ia_msg_queue[2];
